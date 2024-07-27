@@ -95,13 +95,12 @@ Neste caso, decidimos por definir uma quantidade limite de gerações.
 Com base num valor definido vamos pegar uma amostragem da população e considerar o menor valor encontrado, selecionando 2 indivíduos a cada passagem
 
 #### 5. Cruzamento (Crossover)
-Vamos considerar de forma aleatória um índice para realizar o cruzamento entre os indivíduos
+Vamos considerar de forma aleatória um índice para realizar o cruzamento entre os 2 indivíduos
 
 #### 6. Mutação
-Vamos gerar os descendentes baseados no cruzamento dos indivíduos selecionados anteriormente, sendo o posicionamento para o crossover para realizar a mutação
+Vamos aleatoriamente (e considerando também condições com probabilidade para decidir gerar ou não a mutação) realizar a mutação, trocando a posição de 2 pontos de entrega de uma determinada rota.
 
 #### 7. Substituir População Antiga
-A cada iteração, será gerada nova população com os descendentes sempre calculando os menores trajetos
-
+A cada iteração, será gerada nova população com os descendentes sempre calculando os menores trajetos e considerando a quantidade definida de indivíduos para a população
 
 Ao fim da execução, o algoritmo deverá gerar o melhor trajeto que conseguir encontrar, informando a rota que o motorista deverá seguir. Desta forma, encerrando a aplicação.
